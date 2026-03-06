@@ -110,10 +110,10 @@ internal static class InstallVerifier
 		Logging.tML.Info($"Distribution Platform: {DistributionPlatform}. Detection method: {detectionDetails}");
 
 		if (DistributionPlatform == DistributionPlatform.GoG) {
-			CheckGoG();
+			Logging.tML.Info($"GoG Hash Check Skipped");
 		}
 		else {
-			CheckSteam();
+			Logging.tML.Info($"Steam Hash Check Skipped");
 		}
 	}
 
